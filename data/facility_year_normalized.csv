@@ -1,0 +1,7 @@
+facility_id,year,pollutant,medium,amount,unit,source_reference,unit_clean,normalized_amount,unit_note
+FAC_001,2018,Benzene,Air,100.0,kg,EPA-2018,kg,100.0,Native kg; no conversion needed
+FAC_001,2019,Benzene,Air,80.0,kg,EPA-2019,kg,80.0,Native kg; no conversion needed
+FAC_001,2021,Benzene,Air,20.0,kg,EPA-2021,kg,20.0,Native kg; no conversion needed
+FAC_002,2018,Lead,Water,50000.0,kg,GOV-2018,kg,50000.0,Native kg; no conversion needed
+FAC_002,2019,Lead,Water,45.0,t,GOV-2019,t,45000.0,Converted from tonnes to kg (factor: 1000)
+FAC_002,2021,Lead,Water,40.0,t,GOV-2021,t,40000.0,Converted from tonnes to kg (factor: 1000)

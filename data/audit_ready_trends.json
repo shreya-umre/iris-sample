@@ -1,0 +1,32 @@
+[
+    {
+        "facility_id": "FAC_001",
+        "pollutant": "Benzene",
+        "medium": "Air",
+        "baseline_year": 2018,
+        "baseline_amount_kg": 100.0,
+        "latest_year": 2021,
+        "latest_amount_kg": 20.0,
+        "percentage_change": -80.0,
+        "decline_gte_70_pct": true,
+        "missing_years_in_range": [
+            2020
+        ],
+        "confidence_note": "Baseline 2018 to Latest 2021. Missing years explicitly preserved (not zero): [2020]"
+    },
+    {
+        "facility_id": "FAC_002",
+        "pollutant": "Lead",
+        "medium": "Water",
+        "baseline_year": 2018,
+        "baseline_amount_kg": 50000.0,
+        "latest_year": 2021,
+        "latest_amount_kg": 40000.0,
+        "percentage_change": -20.0,
+        "decline_gte_70_pct": false,
+        "missing_years_in_range": [
+            2020
+        ],
+        "confidence_note": "Baseline 2018 to Latest 2021. Missing years explicitly preserved (not zero): [2020]"
+    }
+]

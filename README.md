@@ -1,486 +1,69 @@
-# 🏢 NRW Data Center Business Intelligence Platform
-
-### AI-Powered Geospatial Business Intelligence for Data Center Site Selection and Infrastructure Analysis
-
-The NRW Data Center Business Intelligence Platform is an AI-powered decision support system that combines geospatial analysis, infrastructure intelligence, renewable energy data, market intelligence, and conversational AI into a single interactive dashboard.
-
-Built with **Python**, **PostgreSQL/PostGIS**, **GeoPandas**, **PyDeck**, **Streamlit**, and **OpenAI**, the platform enables users to evaluate data center locations through interactive GIS visualization, site scoring, and AI-assisted insights.
-
----
-
-## Table of Contents
-
-- [Overview](#overview)
-- [Dashboard Preview](#dashboard-preview)
-- [Key Features](#key-features)
-- [System Architecture](#system-architecture)
-- [How It Works](#how-it-works)
-- [Dashboard Modules](#dashboard-modules)
-- [AI Advisor](#ai-advisor)
-- [Technology Stack](#technology-stack)
-- [Project Structure](#project-structure)
-- [Installation](#installation)
-- [Running the Dashboard](#running-the-dashboard)
-- [Project Status](#current-project-status)
-- [Roadmap](#roadmap)
-- [Vision](#vision)
-
-![Python]
-![PostgreSQL]
-![PostGIS]
-![Streamlit]
-![OpenAI]
-![Status]
+# Project IRIS: Historical PRTR Emissions Time-Series ETL & Signals
 
 ## Overview
-
-Selecting an optimal location for a modern data center requires much more than available land.
-
-Power infrastructure, renewable energy, electrical grid capacity, market activity, and surrounding infrastructure all influence the long-term viability of a site.
-
-The NRW Data Center Business Intelligence Platform integrates multiple public infrastructure datasets into a unified PostgreSQL/PostGIS database and provides an interactive AI-powered dashboard for analyzing, comparing, and evaluating potential data center locations.
-
-The platform combines:
-
-- Geospatial Intelligence
-- Infrastructure Analysis
-- Site Scoring
-- Market Intelligence
-- AI-assisted Decision Support
-
-# Key Features
-
-## GIS Intelligence
-
-✔ Interactive GIS Infrastructure Map
-
-✔ Data Center Visualization
-
-✔ High Voltage Substations
-
-✔ Transformers
-
-✔ Transmission Lines
-
-✔ Renewable Energy Assets
-
----
-
-## Business Intelligence
-
-✔ KPI Dashboard
-
-✔ Site Intelligence
-
-✔ Site Score
-
-✔ Market Intelligence
-
-✔ News Intelligence
-
-✔ Spatial Infrastructure Analysis
-
----
-
-## Artificial Intelligence
-
-✔ AI Advisor
-
-✔ Natural Language Queries
-
-✔ Executive Infrastructure Summaries
-
-✔ Context-aware Responses
-
-✔ Retrieval-Augmented Generation (RAG)
-
----
-
-## Spatial Intelligence
-
-✔ Power Readiness Analysis
-
-✔ Renewable Energy Analysis
-
-✔ Infrastructure Distance Calculations
-
-✔ Land Value Integration
-
-✔ Site Ranking
-
-# System Architecture
-
-```mermaid
-flowchart TD
-
-A[External Data Sources]
-
-B[ETL Pipelines]
-
-C[PostgreSQL + PostGIS]
-
-D[Repository Layer]
-
-E[Business Services]
-
-F[Interactive Dashboard]
-
-G[Site Intelligence]
-
-H[News Intelligence]
-
-I[AI Advisor]
-
-J[Executive Decision Support]
-
-A --> B
-B --> C
-C --> D
-D --> E
-
-E --> F
-E --> G
-E --> H
-
-F --> I
-G --> I
-H --> I
-
-I --> J
-```
-```
-
-┌──────────────────────┐
-│ External Data Sources│
-└──────────┬───────────┘
-           │
-           ▼
-┌──────────────────────┐
-│    ETL Pipelines     │
-└──────────┬───────────┘
-           ▼
-┌──────────────────────┐
-│ PostgreSQL + PostGIS │
-└──────────┬───────────┘
-           ▼
-┌──────────────────────┐
-│ Repository Layer     │
-└──────────┬───────────┘
-           ▼
-┌──────────────────────┐
-│ Business Services    │
-└──────────┬───────────┘
-           ▼
-      ┌────┴────┐
-      ▼         ▼
-┌──────────┐ ┌──────────┐
-│ GIS Map  │ │ News BI  │
-└────┬─────┘ └────┬─────┘
-     │            │
-     └────┬───────┘
-          ▼
-┌──────────────────────┐
-│ Site Intelligence    │
-└──────────┬───────────┘
-           ▼
-┌──────────────────────┐
-│ AI Advisor           │
-└──────────┬───────────┘
-           ▼
-┌──────────────────────┐
-│ OpenAI GPT           │
-└──────────┬───────────┘
-           ▼
-┌──────────────────────┐
-│ Executive Insights   │
-└──────────────────────┘
-```
-```                  
-
-# Dashboard Modules
-
-## Interactive GIS Map
-
-Visualizes:
-
-- Data Centers
-- High Voltage Substations
-- Transformers
-- Renewable Energy Assets
-- High Voltage Transmission Lines
-
----
-
-## KPI Dashboard
-
-Provides executive metrics for infrastructure assets, facilities, and renewable energy resources.
-
----
-
-## Site Intelligence
-
-Displays infrastructure proximity, renewable energy availability, land valuation, and technical site characteristics for the selected facility.
-
----
-
-## Site Score
-
-Calculates a unified infrastructure readiness score using spatial analysis and business intelligence metrics.
-
----
-
-## News Intelligence
-
-Aggregates recent industry news and links relevant articles to companies and facilities.
-
----
-
-## AI Advisor
-
-Provides conversational access to infrastructure intelligence using natural language.
-
-
-# AI Advisor
-
-The AI Advisor enables users to explore infrastructure intelligence using natural language.
-
-Current capabilities
-
-- Site Summaries
-- Infrastructure Analysis
-- Grid Readiness Evaluation
-- Renewable Energy Analysis
-- Executive Recommendations
-- News Summaries
-
-Upcoming
-
-- Intent Detection
-- Tool Routing
-- Context Awareness
-- LangGraph Agents
-- Agentic RAG
-
-
-# Technology Stack
-
-## Backend
-
-- Python
-- SQLAlchemy
-- PostgreSQL
-- PostGIS
-
-## GIS
-
-- GeoPandas
-- Shapely
-- PyDeck
-
-## Dashboard
-
-- Streamlit
-
-## AI
-
-- OpenAI
-- Retrieval-Augmented Generation (RAG)
-
-## Data Processing
-
-- Pandas
-- JSON
-- GeoJSON
-
-nrw-dc-bi/
-│
-├── app/
-│   ├── services/
-│   ├── repositories/
-│   ├── database/
-│   ├── spatial/
-│   ├── intelligence/
-│   └── ai/
-│
-├── ui/
-│
-├── data/
-│
-├── scripts/
-│
-├── tests/
-│
-└── README.md
-
-
-# Installation
+A lightweight, reproducible ETL pipeline and signal generator built for historical Pollutant Release and Transfer Register (PRTR) data. It ingests facility-level emissions records, normalizes mixed reporting units (e.g., converting tonnes to kilograms while blocking invalid units), explicitly preserves missing reporting years without converting them to zero, computes baseline-to-latest percentage trends, and flags indicative $\ge 70\%$ emission declines.
 
 ## Prerequisites
+- **Required Language/Runtime:** Python 3.10+ (via Anaconda / Conda or standard Python venv)
+- **Required Dependencies:** `pandas`, `pytest`
 
-- Python 3.12+
-- PostgreSQL 17 + PostGIS
-- uv (Python package manager)
+## Setup
+1. Clone the repository and navigate into the project directory:
+   ```bash
+   git clone <your-repository-url>
+   cd iris-sample
+   ```
+2. Create and activate a clean environment:
+   ```bash
+   conda create -n iris-env python=3.10 -y
+   conda activate iris-env
+   ```
+3. Install required dependencies:
+   ```bash
+   pip install pandas pytest
+   ```
 
-Install uv if you don't already have it:
+## Run
+Execute the pipeline commands sequentially in your terminal:
 
-```bash
-pip install uv
-```
+1. **Generate the self-contained synthetic PRTR fixture:**
+   ```bash
+   python generate_fixture.py
+   ```
+   *Generates `data/prtr_fixture.csv` containing multi-year facility emissions, mixed units, and missing reporting years.*
 
-or
+2. **Run the core ETL pipeline and generate audit-ready trend reports:**
+   ```bash
+   python src/etl.py
+   ```
+   *Processes input data and writes outputs to `data/facility_year_normalized.csv`, `data/audit_ready_trends.csv`, and `data/audit_ready_trends.json`.*
 
-```bash
-powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
-```
-
----
-
-## Clone the Repository
-
-```bash
-git clone <repository-url>
-
-cd nrw-dc-bi
-```
-
----
-
-## Create a Virtual Environment
-
-```bash
-uv venv
-```
-
-Activate it:
-
-### Windows
+## Tests
+Execute the automated test suite using `pytest` to verify unit conversions, missing-year handling, and idempotency:
 
 ```bash
-.venv\Scripts\activate
+python -m pytest tests/
 ```
 
-### Linux / macOS
+**Test Execution Summary:**
+```text
+============================= test session starts =============================
+platform win32 -- Python 3.10.12, pytest-8.x.x, pluggy-1.5.0
+rootdir: iris-sample
+collected 3 items
 
-```bash
-source .venv/bin/activate
+tests/test_etl.py ...                                                    [100%]
+
+============================== 3 passed in 0.74s ==============================
 ```
 
----
+- `test_unit_conversion`: Verifies `t` to `kg` conversion (factor 1000.0) and verifies that unrecognized units are blocked with descriptive audit notes.
+- `test_trend_calculations_and_missing_years`: Validates that a 100 to 20 drop correctly reports an 80% decline (`decline_gte_70_pct = True`) and confirms missing years (e.g., 2020) are preserved as missing rather than coerced to zero.
+- `test_idempotency`: Confirms repeated ETL executions yield identical DataFrame outputs and trend reports.
 
-## Install Dependencies
-
-```bash
-uv sync
-```
-
-If you're not using a `uv.lock` yet, then instead use:
-
-```bash
-uv pip install -r requirements.txt
-```
-
----
-
-## Configure Environment
-
-```bash
-cp .env.example .env
-```
-
-Update the database connection and OpenAI API key.
-
----
-
-## Run Database Migrations
-
-```bash
-alembic upgrade head
-```
-
----
-
-## Start the Dashboard
-
-```bash
-streamlit run ui/app.py
-```
-
-The application will be available at:
-
-```
-http://localhost:8501
-```
-
-## Requirements
-
-- Python 3.12+
-- PostgreSQL 17
-- PostGIS
-- Git
-- uv
-
-# Running the Dashboard
-
-```bash
-streamlit run ui/app.py
-```
-# Current Project Status
-
-## Completed
-
-- Data Collection
-- ETL Pipelines
-- GIS Dashboard
-- Interactive Map
-- Site Intelligence
-- Site Score
-- News Intelligence
-- AI Advisor
-- Infrastructure Layers
-
-## In Progress
-
-- Context-aware AI
-- Intent Detection
-- Tool Routing
-- LangGraph Integration
-
-## Planned
-
-- Multi-Agent AI
-- Predictive Site Recommendations
-- Investment Forecasting
-- Voice Interface
-
-
-# Roadmap
-
-## Completed
-
-- ETL Platform
-- GIS Visualization
-- Business Intelligence Dashboard
-- AI Advisor
-- News Intelligence
-
-## Next
-
-- Intent Detection
-- Context-aware Responses
-- Agentic RAG
-- LangGraph Workflows
-
-## Future
-
-- Predictive Site Ranking
-- Multi-Agent Decision Support
-- Voice-enabled AI Advisor
-
-
-# Vision
-
-The long-term vision is to build an AI-powered decision support platform for data center planning and infrastructure investment.
-
-By combining geospatial intelligence, power infrastructure, renewable energy, land valuation, market intelligence, and conversational AI, the platform enables users to evaluate and compare potential data center locations through natural language interaction.
-
-The project is designed to evolve into a comprehensive executive decision-support system that assists planners, investors, and infrastructure specialists in identifying optimal data center locations.
+## Assumptions and Notes
+- **Unit Normalization & Safety:** Mass units reported in tonnes (`t`) are converted to kilograms (`kg`) using a fixed multiplier of `1000.0`. Unrecognized or ambiguous units are safely blocked with descriptive audit notes (`unit_note`) rather than falsely assumed or defaulted.
+- **Missing-Year Preservation:** Gaps in reporting year sequences (e.g., missing year 2020 for `FAC_001`) are explicitly captured in a `missing_years_in_range` array and are **not** coerced into zero emissions, maintaining data integrity for auditing.
+- **Idempotency & Reproducibility:** Pipeline operations are fully deterministic and stateless. Repeated runs on the same input dataset produce identical output files and trend calculations.
+- **Source & Licence Limitations:** Built using self-contained synthetic fixtures (`data/prtr_fixture.csv`) to comply with licensing boundaries and data privacy limits without requiring bulk web scraping or live production credentials.
+- **Safe Integration into IRIS:** Implemented as a clean, modular vertical slice with decoupled transformation functions (`normalize_units`, `run_etl`) that can be safely imported or integrated into the broader Project IRIS framework.

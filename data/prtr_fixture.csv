@@ -1,0 +1,7 @@
+facility_id,year,pollutant,medium,amount,unit,source_reference
+FAC_001,2018,Benzene,Air,100.0,kg,EPA-2018
+FAC_001,2019,Benzene,Air,80.0,kg,EPA-2019
+FAC_001,2021,Benzene,Air,20.0,kg,EPA-2021
+FAC_002,2018,Lead,Water,50000.0,kg,GOV-2018
+FAC_002,2019,Lead,Water,45.0,t,GOV-2019
+FAC_002,2021,Lead,Water,40.0,t,GOV-2021
