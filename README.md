@@ -10,7 +10,7 @@ A lightweight, reproducible ETL pipeline and signal generator built for historic
 ## Setup
 1. Clone the repository and navigate into the project directory:
    ```bash
-   git clone <your-repository-url>
+   git clone https://github.com/shreya-umre/iris-sample.git
    cd iris-sample
    ```
 2. Create and activate a clean environment:
